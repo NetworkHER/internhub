@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Mail, } from "lucide-react";
 import { NavLinks, socialLinks } from "../utils/data";
 import Link from "next/link";
 

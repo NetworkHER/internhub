@@ -64,6 +64,7 @@ export default function Form() {
         throw new Error('Failed to send email');
       }
       const data = await response.json();
+      console.log('Email sent successfully:', data);
       
       setFormData({
         fullname: '',

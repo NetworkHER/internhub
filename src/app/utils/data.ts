@@ -37,11 +37,11 @@ export const socialLinks = [
     icon: Linkedin,
   },
   {
-    link: "",
+    link: "https://x.com/networkhercomm?s=21",
     icon: Twitter,
   },
   {
-    link: "",
+    link: "https://www.instagram.com/networkhercomm?igsh=ZXdkYTg1eXNzaGs5&utm_source=qr",
     icon: Instagram,
   },
 ];
