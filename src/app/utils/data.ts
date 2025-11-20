@@ -33,7 +33,7 @@ export const NavLinks = [
 
 export const socialLinks = [
   {
-    link: "",
+    link: "https://www.linkedin.com/company/network-her/",
     icon: Linkedin,
   },
   {

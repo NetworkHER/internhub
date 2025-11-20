@@ -16,11 +16,11 @@ export default function Home() {
   return (
     <div className="">
       <Navbar />
-      <div className="mt-18">
+      <div className="">
         {/* Hero Section */}
         <Hero />
         {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> */}
- {/* About Section */}
+        {/* About Section */}
         <About />
         {/* How It Works Section */}
         <HowItWorks />
@@ -28,8 +28,6 @@ export default function Home() {
         <Roles />
         {/* FAQ Section */}
         <FAQ />
-        
-       
       </div>
       <Footer />
     </div>

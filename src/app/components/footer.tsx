@@ -25,8 +25,9 @@ export default function Footer() {
           <div className="flex flex-col">
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <div className="flex flex-col space-y-3 ">
-              {NavLinks.map((navLink) => (
+              {NavLinks.map((navLink,index) => (
                 <Link
+                key={index}
                   href={navLink.href}
                   className="text-gray-200 hover:text-[#6A5ACD] transition-colors"
                 >
@@ -39,19 +40,22 @@ export default function Footer() {
           {/* Social */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Get In Touch</h3>
+            <Link href="mailto:NetworkHERcommunity@gmail.com">
             <div className="flex items-center space-x-2 text-gray-200 my-4">
               <Mail className="h-6 w-6" />
-              <span className="text-base">networkhercommunity@gmail.com</span>
+              <span className="text-base">NetworkHERcommunity@gmail.com</span>
             </div>
+            </Link>
             <div className="flex space-x-4">
-              {socialLinks.map((socialLink) => (
-                <a
+              {socialLinks.map((socialLink,index) => (
+                <Link
+                key={index}
                   href={socialLink.link}
                   className="text-gray-400 hover:text-primary transition-colors"
                   aria-label="LinkedIn"
                 >
                   <socialLink.icon className="h-6 w-6" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
