@@ -6,9 +6,7 @@ import { NavLinks } from "../utils/data";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Form from "./form";
@@ -29,14 +27,17 @@ export function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-18">
-          <div className="flex items-center space-x-2 cursor-pointer">
-            <span className="text-2xl  font-extrabold text-primary">
+    <nav className=" bg-white shadow-sm fixed top-0 left-0 right-0 z-50 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center w-full">
+        <div className="flex justify-between items-center w-full py-[0.75rem]">
+            <Link href={"/"} className="flex items-center">
+          <div className="flex items-center space-x-2 cursor-pointer top-6">
+            <Briefcase className="h-6 w-6 text-[#6A5ACD]" />
+            <span className="text-[1.15rem] font-medium ml-0.5">
               NetworkHER
             </span>
           </div>
+            </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 my-3">
