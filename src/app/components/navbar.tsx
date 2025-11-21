@@ -11,20 +11,9 @@ import {
 } from "@/components/ui/dialog";
 import Form from "./form";
 
-interface NavbarProps {
-  onNavigate: (page: string) => void;
-}
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
-    }
-  };
 
   return (
     <nav className=" bg-white shadow-sm fixed top-0 left-0 right-0 z-50 w-full">

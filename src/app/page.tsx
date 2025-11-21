@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Navbar } from "./components/navbar";
 import Hero from "./components/hero";
 import About from "./components/about";
@@ -8,10 +7,6 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/footer";
 
 export default function Home() {
-  const handleNavigate = (page: string) => {
-    // replace with your navigation logic
-    console.log("Navigate to", page);
-  };
 
   return (
     <div className="">
