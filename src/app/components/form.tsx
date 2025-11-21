@@ -13,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { toast } from "sonner";
 
 interface FormData {
   fullname: string;
@@ -28,6 +29,7 @@ export default function Form() {
     phone: '',
     role: '',
   });
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
@@ -46,8 +48,8 @@ export default function Form() {
   };
 
   const handleOnSubmit = async (e: React.FormEvent) => {
-    console.log('Form submission initiated');
     e.preventDefault(); 
+    setLoading(true);
 
 
 
@@ -64,8 +66,9 @@ export default function Form() {
         throw new Error('Failed to send email');
       }
       const data = await response.json();
-      console.log('Email sent successfully:', data);
-      
+      console.log(data);
+      toast.success('Registration successful! We will contact you soon.');
+   
       setFormData({
         fullname: '',
         email: '',
@@ -74,9 +77,16 @@ export default function Form() {
       });
 
     } catch (error) {
-      console.log('Error sending email', error);
+      const message =
+        error instanceof Error
+          ? error.message
+          : typeof error === "string"
+          ? error
+          : "Error sending email";
+      toast.error(message);
 
     }
+    setLoading(false);
   };
 
   return (
@@ -147,7 +157,8 @@ export default function Form() {
           
           <button 
             type="submit" 
-            className="block w-full bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors"
+            className="block w-full bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors disabled:opacity-25 disabled:cursor-not-allowed mt-4"
+            disabled={loading}
           >
             Register
           </button>

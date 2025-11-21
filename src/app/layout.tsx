@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 
 
@@ -38,6 +39,16 @@ export default function RootLayout({
         className={`${poppins.variable} antialiased`}
       >
         {children}
+         <Toaster  
+         richColors
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            classNames: {
+              success: "bg-green-600 text-white",
+              error: "bg-red-100 text-white",
+            }
+          }} />
       </body>
     </html>
   );
