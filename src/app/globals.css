@@ -148,6 +148,9 @@ body {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+.work article {
+  height: 86%;
+}
 
 .about article {
   width: 95%;
@@ -156,7 +159,9 @@ body {
   padding: 2.4rem;
   border: none;
   box-shadow: 0 4px 20px rgb(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
 
 .about article.extra-padding {

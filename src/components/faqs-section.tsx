@@ -7,13 +7,13 @@ import {
 
 export function FaqsSection() {
   return (
-    <div className="mx-auto w-full max-w-3xl space-y-7 px-4 pt-16 ">
+    <div className="mx-auto w-full max-w-3xl space-y-7 px-4 pt-16 pb-10">
       <div className="space-y-2 text-center">
         <h2 className="font-semibold text-3xl md:text-4xl">
-        Frequently Asked Questions
+          Frequently Asked Questions
         </h2>
         <p className="max-w-2xl text-muted-foreground">
-         Find answers to common questions about our internship program.
+          Find answers to common questions about our internship program.
         </p>
       </div>
       <Accordion
@@ -22,7 +22,7 @@ export function FaqsSection() {
         defaultValue="item-1"
         type="single"
       >
-        {questions.map((item,) => (
+        {questions.map((item) => (
           <AccordionItem
             className="relative border-x first:rounded-t-lg first:border-t last:rounded-b-lg last:border-b bg-white rounded-xl shadow-md border border-gray-100"
             key={item.id}
@@ -37,49 +37,60 @@ export function FaqsSection() {
           </AccordionItem>
         ))}
       </Accordion>
-     
     </div>
   );
 }
 
-  const questions = [
-    {
-       id: "item-1",
-      question: 'Is this internship paid?',
-      answer:
-        'The NetworkHER internship program focuses on providing hands-on learning experience, mentorship, and skill development. While this particular program is volunteer-based, participants gain valuable portfolio work, certificates, and real-world experience that can lead to paid opportunities.',
-    },
-    {
-       id: "item-2",
-      question: 'Who can apply?',
-      answer:
-        'The program is open to all aspiring digital professionals, regardless of gender, background, or location. We welcome students, career switchers, and anyone passionate about learning and growing in the tech and digital space.',
-    },
-    {
-       id: "item-3",
-      question: 'How long is the program?',
-      answer:
-        '6 to 8 weeks.',
-    },
-    {
-       id: "item-4",
-      question: 'Do I need prior experience?',
-      answer:
-        "No prior professional experience is required! We're looking for motivated individuals who are eager to learn. Basic familiarity with your chosen field is helpful but not mandatory. Our mentors will guide you through the learning process.",
-    },
-    {
-       id: "item-5",
-      question: 'How long is the program?',
-      answer:
-        'Successful participants receive a certificate of completion, portfolio pieces from real projects, recommendation letters, and the opportunity to continue working with NetworkHER on future initiatives.',
-    },
-    {
-      id: "item-6",
-      question:  "How do i apply?",
-      answer: "Click the 'Apply Now' button on this page to access our application form. You'll need to share information about yourself, your interests, and why you want to join the program. Applications are reviewed on a rolling basis."
-
-    }
-  ];
+const questions = [
+  {
+    id: "item-1",
+    question: "Who can apply?",
+    answer:
+      "Students, recent grads, early career creatives and anyone learning tech or digital skills. We welcome learners who are active and ready to commit to project deadlines.",
+  },
+  {
+    id: "item-2",
+    question: "Do I need previous experience?",
+    answer:
+      "No. We accept beginners and intermediate learners. Each track has beginner friendly briefs and optional stretch tasks.",
+  },
+  {
+    id: "item-3",
+    question: "How much time will this take?",
+    answer:
+      "Expect 5–8 hours per week for individual tasks; team sprint weeks may require more time. We build with flexibility in mind.",
+  },
+  {
+    id: "item-4",
+    question: "Are there costs?",
+    answer:
+      "No, current cycles are free. In future, there may be paid or sponsored tracks, members will be informed ahead of time.",
+  },
+  {
+    id: "item-5",
+    question: "Will I get a certificate?",
+    answer:
+      "Yes, participants who complete the final capstone and post required milestones receive a completion certificate and a showcase entry.",
+  },
+  {
+    id: "item-6",
+    question: "How are teams formed?",
+    answer:
+      "Teams for the capstone are cross-functional and formed based on skills and project needs. You’ll work individually first, then join a team for the final project.",
+  },
+  {
+    id: "item-7",
+    question: "What should I post on LinkedIn?",
+    answer:
+      "Short, honest updates: acceptance announcement, a snapshot of your project, lessons learned, or the final project link. Tag @NetworkHER and add a short caption.",
+  },
+  {
+    id: "item-8",
+    question: "Who runs the program?",
+    answer:
+      "NetworkHER core team coordinates tracks, mentors and community moderators. We’ll list core team names and contact points on the site.",
+  },
+];
 
 // const questions = [
 //   {
