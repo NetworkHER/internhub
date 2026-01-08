@@ -6,6 +6,7 @@ import Roles from "./components/roles";
 import FAQ from "./components/FAQ";
 import Footer from "./components/footer";
 import Join from "./components/join";
+import CallToAction from "./components/call-to-action";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Join />
         {/* Roles Section */}
         <Roles />
+        <CallToAction />
         {/* FAQ Section */}
         <FAQ />
       </div>

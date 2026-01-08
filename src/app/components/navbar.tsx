@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/dialog";
 import Form from "./form";
 
-
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,17 +18,17 @@ export function Navbar() {
     <nav className=" bg-white shadow-sm fixed top-0 left-0 right-0 z-50 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center w-full">
         <div className="flex justify-between items-center w-full py-[0.75rem]">
-            <Link href={"/"} className="flex items-center">
-          <div className="flex items-center space-x-2 cursor-pointer top-6">
-            <Briefcase className="h-6 w-6 text-[#6A5ACD]" />
-            <span className="text-[1.15rem] font-medium ml-0.5">
-              NetworkHER
-            </span>
-          </div>
-            </Link>
+          <Link href={"/"} className="flex items-center">
+            <div className="flex items-center space-x-2 cursor-pointer top-6">
+              <Briefcase className="h-6 w-6 text-[#6A5ACD]" />
+              <span className="text-[1.15rem] font-medium ml-0.5">
+                NetworkHER
+              </span>
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 my-3">
+          <div className="hidden md:flex justify-end items-center space-x-8 my-3 w-3/4">
             {NavLinks.map((navLink, index) => (
               <Link
                 key={index}
@@ -39,8 +38,16 @@ export function Navbar() {
                 {navLink.text}
               </Link>
             ))}
-
-            <Dialog>
+            <Link
+              href={
+                "https://docs.google.com/forms/d/e/1FAIpQLSenbPi1oFgTrblxE_vjs1IbgyL1By4FZwFEyWKgrSaEYDHjHA/viewform"
+              }
+              target="_blank"
+              className="w-[20%] bg-primary text-white text-[1rem] transition-all hover:shadow-2xl  hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg border-2 border-primary font-bold text-center"
+            >
+              <button className=" "> Apply now</button>{" "}
+            </Link>
+            {/* <Dialog>
               <DialogTrigger className="bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors">
                 {" "}
                 Apply now
@@ -50,7 +57,7 @@ export function Navbar() {
                   <Form />
                 </DialogHeader>
               </DialogContent>
-            </Dialog>
+            </Dialog> */}
 
             {/* <button className="bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors">
               Apply now

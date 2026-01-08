@@ -3,7 +3,7 @@ import { FileCheck, Send, CheckCircle, User } from "lucide-react";
 
 export default function HowItWorks() {
   return (
-    <div className="mt-16 pt-14 pb-20 bg-[#f9fafc]">
+    <div className="mt-16 pt-14 pb-20 bg-[#f9fafc]" id="howItWorks">
       <header className="">
         <h1 className="text-center font-bold text-3xl">How It Works</h1>
         <p className="text-center mt-3 w-[93%] text-[1.08rem] mx-auto">

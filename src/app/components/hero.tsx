@@ -7,19 +7,23 @@ import {
 } from "@/components/ui/dialog";
 import Form from "./form";
 import Link from "next/link";
+import hero from "../../../public/bg-hero.jpg";
 
 export default function Hero() {
   return (
-    <div className="pt-26 pb-14 bg-[#eff3f3] h-[90vh] flex flex-col justify-center gap-6 items-center">
+    <div
+      className={`bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/bg-hero.jpg')]  pt-26 pb-14 h-[90vh] flex flex-col justify-center gap-6 items-center  bg-no-repeat bg-center bg-cover `}
+    >
+      {/* <div className="absolute inset-0 bg-black0 bg-black/70 "></div> */}
       <header className="text-center leading-8 font-bold">
-        <h1 className="text-[3.3rem] md:text-6xl leading-12 text-foreground capitalize">
+        <h1 className="text-[3.3rem] md:text-6xl leading-12  capitalize text-white">
           Launch your digital career
         </h1>
         <h1 className="text-[3.3rem] md:text-6xl leading-15 mt-3 text-primary capitalize">
           real projects, real skills.
         </h1>
       </header>
-      <p className="mt-6 text-center text-[1.08rem] md:text-[1.15rem] w-[85%] mx-auto text-gray-700 md:w-[60%]">
+      <p className="mt-6 text-center text-white text-[1.08rem] md:text-[1.15rem] w-[85%] mx-auto  md:w-[60%]">
         Join a community of creators, coders and changemakers. Learn by doing,
         build work you’re proud of, and grow your portfolio.
       </p>
