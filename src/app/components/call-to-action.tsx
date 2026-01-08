@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CallToAction() {
   return (
-    <div className="mt-16 pt-14 pb-20 bg-primary text-[#f9fafc] bg-[linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/call.jpg')] bg-no-repeat bg-center bg-cover">
+    <div className="mt-16 pt-14 pb-20 bg-primary text-[#f9fafc] bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/call.jpg')] bg-no-repeat bg-center bg-cover">
       <header className="">
         <h1 className="text-center font-bold text-3xl">
           Ready to build something real?
