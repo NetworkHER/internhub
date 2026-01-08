@@ -33,7 +33,7 @@ export const NavLinks = [
 
 export const socialLinks = [
   {
-    link: "https://www.linkedin.com/company/network-her/",
+    link: "https://www.linkedin.com/company/networkhercomm//",
     icon: Linkedin,
   },
   {
@@ -50,48 +50,50 @@ export const roles = [
   {
     title: "Frontend Developer",
     description:
-      "Build beautiful, responsive user interfaces using modern web technologies",
+      "Build the user-facing part of our products using clean, responsive, and functional interfaces.",
     icon: Code,
+  },
+  {
+    title: "Backend Developer",
+    description:
+      "Work on the server-side logic, APIs, databases, and everything that keeps the system running smoothly.",
+    icon: DollarSign,
   },
   {
     title: "Data Analyst",
     description:
-      "Transform raw data into actionable insights and visualizations",
+      "Collect and interpret data from the project, uncover insights, and help the team make informed decisions.",
     icon: BarChart,
   },
   {
     title: "Product Designer",
     description:
-      "Create intuitive user experiences and stunning visual designs",
+      "Create user flows, wireframes, layouts, and seamless experiences that guide how users interact with the product.",
     icon: PenTool,
   },
   {
     title: "Project Manager",
     description:
-      "Coordinate teams, manage timelines, and deliver successful projects",
+      "Plan, organize, and coordinate the project. Define goals, gather requirements, and ensure the team moves in the right direction.",
     icon: Package,
   },
   {
-    title: "Content Creator / Copywriter",
+    title: "Content & Communications",
     description:
-      "Craft compelling stories and engaging content across platforms",
+      "Craft clear, engaging written content for pages, features, updates, and internal communication throughout the project.",
     icon: Video,
   },
-  {
-    title: "Backend Developer",
-    description: "Build server-side logic, APIs, and database architecture",
-    icon: DollarSign,
-  },
+
   {
     title: "Social Media Manager",
     description:
-      "Develop and execute social media strategies that drive engagement",
+      "Manage digital presence, share project updates, and help the community stay informed and active.",
     icon: Megaphone,
   },
   {
     title: "Virtual Assistant",
     description:
-      "Support operations and administration with organizational excellence",
+      "Support project organization with scheduling, documentation, message coordination, and day-to-day operations.",
     icon: Headphones,
   },
 ];

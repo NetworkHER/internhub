@@ -5,9 +5,10 @@ import HowItWorks from "./components/howItWorks";
 import Roles from "./components/roles";
 import FAQ from "./components/FAQ";
 import Footer from "./components/footer";
+import Join from "./components/join";
+import CallToAction from "./components/call-to-action";
 
 export default function Home() {
-
   return (
     <div className="">
       <Navbar />
@@ -19,8 +20,10 @@ export default function Home() {
         <About />
         {/* How It Works Section */}
         <HowItWorks />
+        <Join />
         {/* Roles Section */}
         <Roles />
+        <CallToAction />
         {/* FAQ Section */}
         <FAQ />
       </div>
