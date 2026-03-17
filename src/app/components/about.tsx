@@ -3,12 +3,14 @@ import { Target, Users, Award, Linkedin, Book } from "lucide-react";
 export default function About() {
   return (
     <div className="pt-16" id="about">
-      <header className=" ">
-        <h1 className="font-bold text-[2.8rem] md:text-[2.3rem] leading-12 text-center text-foreground">
-          What you get from our intership
+      <header className=" capitalize ">
+        <h1 className="font-semibold text-[1.6rem] md:text-[1.5rem] text-center text-foreground md:w-4/6 mx-auto">
+          The BuildLabs Internship is part of the Build Initiative, a program by
+          Nexus Fellowship focused on equipping individuals with practical,
+          real-world skills.
         </h1>
         <p className="mt-6 md:mt-2 text-center text-[1.1rem] md:text-[1.2rem] w-[90%] mx-auto text-gray-700">
-          What you’ll gain at NetworkHER
+          what you gain from our internship?
         </p>
       </header>
       <div className="about mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

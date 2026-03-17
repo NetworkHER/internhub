@@ -12,12 +12,10 @@ export default function Footer() {
           {/* logo */}
           <div className="max-w-90">
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-xl font-bold">NetworkHER</span>
+              <span className="text-xl font-bold">BuildLabs Internship</span>
             </div>
             <p className="text-gray-200 text-base">
-              Bridging learning and real-world experience through inclusive
-              digital internships. Empowering the next generation of digital
-              professionals.
+              A hands-on internship by Nexus Fellowship
             </p>
           </div>
 
@@ -65,7 +63,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            © {currentYear} InternHub. All rights reserved.
+            © {currentYear} Nexus Fellowship. All rights reserved.
           </p>
         </div>
       </div>

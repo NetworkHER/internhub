@@ -5,7 +5,7 @@ export default function CallToAction() {
   return (
     <div className="mt-16 pt-14 pb-20 bg-primary text-[#f9fafc] bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/call.jpg')] bg-no-repeat bg-center bg-cover">
       <header className="">
-        <h1 className="text-center font-bold text-3xl">
+        <h1 className="text-center font-bold text-3xl capitalize">
           Ready to build something real?
         </h1>
         <h3 className="text-center font- text-xl">
@@ -17,7 +17,9 @@ export default function CallToAction() {
             target="_blank"
             className="w-[95%]  text-white text-[1rem] mt-2 py-4 md:py-3  font-bold text-center"
           >
-            <button className=" ">Apply to join this cycle</button>
+            <button className=" underline text-[#6A5ACD] ">
+              Apply to join this cycle
+            </button>
           </Link>{" "}
           spots are limited.
         </h3>

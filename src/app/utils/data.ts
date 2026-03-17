@@ -72,17 +72,17 @@ export const roles = [
     icon: PenTool,
   },
   {
-    title: "Project Manager",
+    title: "Product Manager",
     description:
       "Plan, organize, and coordinate the project. Define goals, gather requirements, and ensure the team moves in the right direction.",
     icon: Package,
   },
-  {
-    title: "Content & Communications",
-    description:
-      "Craft clear, engaging written content for pages, features, updates, and internal communication throughout the project.",
-    icon: Video,
-  },
+  // {
+  //   title: "Content & Communications",
+  //   description:
+  //     "Craft clear, engaging written content for pages, features, updates, and internal communication throughout the project.",
+  //   icon: Video,
+  // },
 
   {
     title: "Social Media Manager",

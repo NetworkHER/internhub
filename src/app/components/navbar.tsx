@@ -22,7 +22,7 @@ export function Navbar() {
             <div className="flex items-center space-x-2 cursor-pointer top-6">
               <Briefcase className="h-6 w-6 text-[#6A5ACD]" />
               <span className="text-[1.15rem] font-medium ml-0.5">
-                NetworkHER
+                BuildLabs Internship
               </span>
             </div>
           </Link>

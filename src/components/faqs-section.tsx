@@ -82,13 +82,13 @@ const questions = [
     id: "item-7",
     question: "What should I post on LinkedIn?",
     answer:
-      "Short, honest updates: acceptance announcement, a snapshot of your project, lessons learned, or the final project link. Tag @NetworkHER and add a short caption.",
+      "Short, honest updates: acceptance announcement, a snapshot of your project, lessons learned, or the final project link.",
   },
   {
     id: "item-8",
     question: "Who runs the program?",
     answer:
-      "NetworkHER core team coordinates tracks, mentors and community moderators. We’ll list core team names and contact points on the site.",
+      "The BuildLabs Internship is organized by Nexus Fellowship, under its Build Initiative, which focuses on practical skill development and career growth.",
   },
 ];
 
