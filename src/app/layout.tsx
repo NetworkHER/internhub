@@ -3,29 +3,27 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
-
-
 const poppins = Poppins({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-poppins",
-})
+});
 
 export const metadata: Metadata = {
-  title: "NetworkHer InternHub",
+  title: "BuildLabs Internship",
   description: "A platform connecting interns with top companies worldwide.",
   keywords: [
     "internship",
-    "NetworkHer",
+    "BuildLabs",
     "job placement",
     "career development",
     "professional growth",
-    "networking",
+    "BuildLabs internship",
     "mentorship",
     "skill building",
     "resume building",
     "job search",
-  ]
+  ],
 };
 
 export default function RootLayout({
@@ -35,20 +33,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} antialiased`}
-      >
+      <body className={`${poppins.variable} antialiased`}>
         {children}
-         <Toaster  
-         richColors
+        <Toaster
+          richColors
           position="top-right"
           toastOptions={{
             duration: 4000,
             classNames: {
               success: "bg-green-600 text-white",
               error: "bg-red-100 text-white",
-            }
-          }} />
+            },
+          }}
+        />
       </body>
     </html>
   );
