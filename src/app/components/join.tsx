@@ -8,9 +8,9 @@ export default function Join() {
           Who should join?
         </h1>
         <p className="text-center mt-3 max-w-4xl text-[1.08rem] mx-auto">
-          Students, early career creatives and aspiring tech professionals who
-          want hands-on experience, no perfect CV required. If you’re ready to
-          learn by doing and showcase real work, NetworkHER is for you.
+          Students, early-career creatives, and aspiring tech professionals who
+          want hands-on experience. No perfect CV required, just a willingness
+          to learn and build.
         </p>
       </header>
     </div>

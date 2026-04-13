@@ -42,7 +42,7 @@ export default function Footer() {
               <p>Want to ask something now? Email us at </p>
               <div className="flex items-center space-x-2 text-gray-200 my-4 leading-0 leading-0.1">
                 <Mail className="h-6 w-6" />
-                <span className="text-base">NetworkHERcommunity@gmail.com</span>
+                <span className="text-base">nexusfellowship@gmail.com</span>
               </div>
             </Link>
             <div className="flex space-x-4">

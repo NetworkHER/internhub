@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="pt-16" id="about">
       <header className=" capitalize ">
-        <h1 className="font-semibold text-[1.6rem] md:text-[1.5rem] text-center text-foreground md:w-4/6 mx-auto">
+        <h1 className="font-normal text-lg md:text-xl text-center text-foreground md:w-4/6 mx-auto">
           The BuildLabs Internship is part of the Build Initiative, a program by
           Nexus Fellowship focused on equipping individuals with practical,
           real-world skills.
@@ -26,7 +26,7 @@ export default function About() {
           <div>
             <Users size={30} className="text-primary" />
           </div>
-          <h2>Cross-discipline skills</h2>
+          <h2> Cross-disciplinary skills</h2>
           <p>Tech, design, content, product and community roles.</p>
         </article>
 

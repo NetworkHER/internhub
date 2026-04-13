@@ -24,8 +24,10 @@ export default function Hero() {
         </h1>
       </header>
       <p className="mt-6 text-center text-white text-[1.08rem] md:text-[1.15rem] w-[85%] mx-auto  md:w-[60%]">
-        Join a community of creators, coders and changemakers. Learn by doing,
-        build work you’re proud of, and grow your portfolio.
+        Build real-world experience, work on practical projects, and grow your
+        portfolio through the BuildLabs Internship.
+        {/* Join a community of creators, coders and changemakers. Learn by doing,
+        build work you’re proud of, and grow your portfolio. */}
       </p>
 
       <div className=" w-full mt-8 md:mt-5 flex flex-col justify-center items-center md:flex md:w-[40%] md:p-0 md:flex-row md:gap-2 mx-auto ">

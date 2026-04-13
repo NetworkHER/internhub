@@ -37,11 +37,11 @@ export const socialLinks = [
     icon: Linkedin,
   },
   {
-    link: "https://x.com/networkhercomm?s=21",
+    link: "https://x.com/NexusFellow_hq",
     icon: Twitter,
   },
   {
-    link: "https://www.instagram.com/networkhercomm?igsh=ZXdkYTg1eXNzaGs5&utm_source=qr",
+    link: "https://www.instagram.com/NexusFellow_hq",
     icon: Instagram,
   },
 ];
@@ -66,7 +66,7 @@ export const roles = [
     icon: BarChart,
   },
   {
-    title: "Product Designer",
+    title: "UI/UX Designer",
     description:
       "Create user flows, wireframes, layouts, and seamless experiences that guide how users interact with the product.",
     icon: PenTool,
