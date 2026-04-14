@@ -21,10 +21,7 @@ export const NavLinks = [
     href: "#howItWorks",
     text: "How it works",
   },
-  {
-    href: "#roles",
-    text: "Roles",
-  },
+
   {
     href: "#faq",
     text: "FAQ",

@@ -45,7 +45,7 @@ export function Navbar() {
               target="_blank"
               className="w-[20%] bg-primary text-white text-[1rem] transition-all hover:shadow-2xl  hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg border-2 border-primary font-bold text-center"
             >
-              <button className=" "> Apply now</button>{" "}
+              <button className=" "> Join Our Community</button>{" "}
             </Link>
             {/* <Dialog>
               <DialogTrigger className="bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors">

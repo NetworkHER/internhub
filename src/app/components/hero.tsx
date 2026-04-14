@@ -38,15 +38,17 @@ export default function Hero() {
           target="_blank"
           className="w-[95%] bg-primary text-white text-[1rem] transition-all hover:shadow-2xl  hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg border-2 border-primary font-bold text-center"
         >
-          <button className=" ">Get Started</button>{" "}
+          <button className=" ">Apply now </button>{" "}
         </Link>
 
         <Link
-          href={"#about"}
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSenbPi1oFgTrblxE_vjs1IbgyL1By4FZwFEyWKgrSaEYDHjHA/viewform"
+          }
           target="_blank"
           className="hover:bg-primary hover:text-white text-[1rem] transition-all hover:shadow-2xl w-[95%] hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg bg-white border-2 border-primary text-primary font-bold text-center"
         >
-          <button className=" "> Learn More</button>{" "}
+          <button className=" "> Join Waitlist </button>{" "}
         </Link>
 
         {/* <Dialog>

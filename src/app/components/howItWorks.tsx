@@ -68,6 +68,21 @@ export default function HowItWorks() {
             </p>
           </article>
         </div>
+        <div>
+          <div className="number">
+            <p>4</p>
+          </div>
+          <article>
+            <div>
+              <User size={30} className="text-white" />
+            </div>
+            <h2>Receive certificate & recommendation </h2>
+            <p>
+              Outstanding participants will receive referrals and recommendation
+              for job opportunities upon completion.
+            </p>
+          </article>
+        </div>
       </div>
     </div>
   );
