@@ -5,9 +5,10 @@ import {
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Form from "./form";
 import Link from "next/link";
 import hero from "../../../public/bg-hero.jpg";
+import Form from "./old";
+import { BuildLabsForm } from "./formsPage";
 
 export default function Hero() {
   return (
@@ -41,7 +42,7 @@ export default function Hero() {
           <button className=" ">Apply now </button>{" "}
         </Link>
 
-        <Link
+        {/* <Link
           href={
             "https://docs.google.com/forms/d/e/1FAIpQLSenbPi1oFgTrblxE_vjs1IbgyL1By4FZwFEyWKgrSaEYDHjHA/viewform"
           }
@@ -49,7 +50,7 @@ export default function Hero() {
           className="hover:bg-primary hover:text-white text-[1rem] transition-all hover:shadow-2xl w-[95%] hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg bg-white border-2 border-primary text-primary font-bold text-center"
         >
           <button className=" "> Join Waitlist </button>{" "}
-        </Link>
+        </Link> */}
 
         {/* <Dialog>
           <DialogTrigger className="bg-primary text-white text-[1rem] transition-all hover:shadow-2xl w-[95%] hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg border-2 border-primary font-bold">
@@ -62,17 +63,17 @@ export default function Hero() {
             </DialogHeader>
           </DialogContent>
         </Dialog> */}
-        {/* <Dialog>
+        <Dialog>
           <DialogTrigger className="hover:bg-primary hover:text-white text-[1rem] transition-all hover:shadow-2xl w-[95%] hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg bg-white border-2 border-primary text-primary font-bold">
             {" "}
             Join Waitlist
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <Form />
+              <BuildLabsForm />
             </DialogHeader>
           </DialogContent>
-        </Dialog> */}
+        </Dialog>
       </div>
     </div>
   );

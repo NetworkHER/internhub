@@ -2,20 +2,24 @@ import React from "react";
 import { Target, Users, Award, Linkedin, Book } from "lucide-react";
 export default function About() {
   return (
-    <div className="pt-16" id="about">
+    <div className="pt-16 mx-8" id="about">
       <header className="  ">
-        <h1 className="font-normal text-lg md:text-xl text-foreground md:w-4/6 mx-auto text-lef my-">
+        <h1 className="font-bold text-lg md:text-xl text-foreground md:w-3/4 mx-auto text-center my-2">
+          {" "}
+          About BuildLabs
+        </h1>
+        <h1 className="font-normal text-lg md:text-xl text-foreground md:w-3/4 mx-auto text-lef my-">
           BuildLabs is a project-based internship under Nexus Fellowship,
           designed to give you real-world experience, help you build a strong
           portfolio, and develop practical skills through collaboration.
         </h1>
-        <h1 className="font-normal text-lg md:text-xl text-foreground md:w-4/6 mx-auto text-left my-2">
+        <h1 className="font-normal text-lg md:text-xl text-foreground md:w-3/4 mx-auto text-left my-2">
           {" "}
           Participants will gain hands-on experience working on real projects in
           a structured team environment, while building practical,
           industry-ready skills for the workplace.
         </h1>
-        <h1 className="font-normal text-lg md:text-xl text-foreground md:w-4/6 mx-auto text-left my-2">
+        <h1 className="font-normal text-lg md:text-xl text-foreground md:w-3/4 mx-auto text-left my-2">
           {" "}
           Upon successful completion of the program, participants will receive a
           certificate of completion and a letter of recommendation. Outstanding

@@ -10,9 +10,11 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import Form from "./form";
+import { NexusFellowshipForm } from "./formsPage";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [nexusOpen, setNexusOpen] = useState(false);
 
   return (
     <nav className=" bg-white shadow-sm fixed top-0 left-0 right-0 z-50 w-full">
@@ -38,7 +40,7 @@ export function Navbar() {
                 {navLink.text}
               </Link>
             ))}
-            <Link
+            {/* <Link
               href={
                 "https://docs.google.com/forms/d/e/1FAIpQLSenbPi1oFgTrblxE_vjs1IbgyL1By4FZwFEyWKgrSaEYDHjHA/viewform"
               }
@@ -46,18 +48,18 @@ export function Navbar() {
               className="w-[20%] bg-primary text-white text-[1rem] transition-all hover:shadow-2xl  hover:translate-0.5 mt-2 py-4 md:py-3 rounded-lg border-2 border-primary font-bold text-center"
             >
               <button className=" "> Join Our Community</button>{" "}
-            </Link>
-            {/* <Dialog>
+            </Link> */}
+            <Dialog>
               <DialogTrigger className="bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors">
                 {" "}
-                Apply now
+                Join Our Community
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
-                  <Form />
+                  <NexusFellowshipForm onSuccess={() => setNexusOpen(false)} />
                 </DialogHeader>
               </DialogContent>
-            </Dialog> */}
+            </Dialog>
 
             {/* <button className="bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors">
               Apply now
@@ -95,11 +97,11 @@ export function Navbar() {
             <Dialog>
               <DialogTrigger className="bg-[#6A5ACD] text-white px-6 py-2 rounded-lg hover:bg-[#5a4abd] transition-colors">
                 {" "}
-                Apply now
+                Join Our Community
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
-                  <Form />
+                  <NexusFellowshipForm onSuccess={() => setNexusOpen(false)} />
                 </DialogHeader>
               </DialogContent>
             </Dialog>
